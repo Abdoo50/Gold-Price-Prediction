@@ -6,9 +6,6 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import accuracy_score, r2_score
 from PIL import Image
 
-from warnings import filterwarnings
-filterwarnings(action='ignore', category=DeprecationWarning, message='`np.bool` is a deprecated alias')
-
 
 # Load data
 gold_data = pd.read_csv('gld_price_data.csv')
